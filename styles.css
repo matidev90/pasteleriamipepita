@@ -51,3 +51,38 @@ footer {
     max-width: 100%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
     height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
 }
+
+/* Estilo normal del enlace de WhatsApp */
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px; /* Ajusta el padding según sea necesario */
+    border-radius: 10px; /* Ajusta el radio del borde según sea necesario */
+    font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
+    transition: background-color 0.3s; /* Agrega una transición suave para el cambio de color de fondo */
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: #fff;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+.whatsapp-link:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse a blanco */
+    color: #25D366; /* Cambia el color del texto al pasar el mouse a verde */
+    text-decoration: none; /* Elimina el subrayado al pasar el mouse */
+}
+
+.whatsapp-link i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
