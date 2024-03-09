@@ -111,7 +111,7 @@ footer {
 }
 
 .zoom-effect:hover img {
-    transform: scale(1.5); /* Escala la imagen al 150% al pasar el mouse */
+    transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse */
 }
 
 /* Ajuste de márgenes entre las columnas */
