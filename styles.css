@@ -37,12 +37,15 @@ body {
 }
 #inicio {
     font-family: "Madimi One", sans-serif;
+    background-color: #ffffff;
 }
 #pasteles {
     font-family: "Madimi One", sans-serif;
+    background-color: white !important;
 }
 #pedidos {
     font-family: "Madimi One", sans-serif;
+    background-color: #ffffff;
 }
 footer {
     font-family: "Madimi One", sans-serif;
@@ -87,5 +90,60 @@ footer {
 }
 #pedidos {
     background-color: #ffffff; /* Cambia el color de fondo a blanco */
+}
+
+/* Efecto de zoom al pasar el mouse */
+.zoom-effect {
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    position: relative; /* Establece el contexto de apilamiento para el contenido animado */
+    border-radius: 50%; /* Hace que el contenedor sea redondo */
+    width: 250px; /* Ancho del contenedor */
+    height: 250px; /* Altura del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    margin-bottom: 20px; /* Margen inferior entre los contenedores */
+}
+
+.zoom-effect img {
+    transition: transform 0.5s ease; /* Transición suave */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    width: 100%; /* Ajusta el tamaño de la imagen para que ocupe todo el contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.zoom-effect:hover img {
+    transform: scale(1.5); /* Escala la imagen al 150% al pasar el mouse */
+}
+
+/* Ajuste de márgenes entre las columnas */
+.row [class^="col-"] {
+    padding-right: 5px; /* Margen derecho */
+    padding-left: 5px; /* Margen izquierdo */
+}
+.grab {
+    cursor: grab;
+}
+
+.btn-instagram {
+    font-family: "Madimi One", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5073c8, #1098ad, #07b39b, #6fba82, #b5cc5c, #fde725); /* Degradado anaranjado de Instagram */
+    border-color: #f09433; /* Color primario del degradado */
+    padding: 10px 20px; /* Ajusta el espaciado interno */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    max-width: 300px; /* Ancho máximo del botón */
+    margin: 0 auto; /* Centra horizontalmente el botón */
+}
+
+.btn-instagram:hover {
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5073c8, #1098ad, #07b39b, #6fba82, #b5cc5c, #fde725); /* Mantén el mismo degradado al pasar el mouse */
+    border-color: #f09433; /* Mantén el mismo color de borde al pasar el mouse */
+}
+
+.btn-instagram i {
+    font-size: 50px; /* Tamaño del icono */
+    margin-right: 10px; /* Espaciado a la derecha del icono */
 }
 
