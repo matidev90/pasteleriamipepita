@@ -1,3 +1,8 @@
+//Iniciar el sitio desde el header.
+window.onload = function() {
+    window.scrollTo(0, 0); // Hacer que el navegador se desplace al inicio de la página
+};
+
 // Inicializar el carrusel de Bootstrap
 document.addEventListener("DOMContentLoaded", function() {
     $('#carouselExampleIndicators').carousel();
