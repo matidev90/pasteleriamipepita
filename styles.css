@@ -17,24 +17,9 @@ body {
 .carousel-item img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
-.thumbnail-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Se ajusta automáticamente el número de columnas */
-    gap: 10px; /* Espacio entre las miniaturas */
-}
-
-.thumbnail-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    transition: transform 0.3s;
-}
-
-.thumbnail-gallery img:hover {
-    transform: scale(1.1);
-}
 #inicio {
     font-family: "Madimi One", sans-serif;
     background-color: #ffffff;
@@ -43,6 +28,7 @@ body {
     font-family: "Madimi One", sans-serif;
     background-color: white !important;
 }
+
 #pedidos {
     font-family: "Madimi One", sans-serif;
     background-color: #ffffff;
@@ -54,7 +40,14 @@ footer {
     max-width: 100%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
     height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
 }
+.carousel-indicators li {
+    background-color: pink; /* Cambia el color de fondo de los indicadores a rosa */
+  }
 
+  .carousel-indicators {
+    position: static;
+    margin-top: 10px;
+  }
 /* Estilo normal del enlace de WhatsApp */
 .whatsapp-link {
     display: inline-block;
@@ -65,6 +58,7 @@ footer {
     border-radius: 10px; /* Ajusta el radio del borde según sea necesario */
     font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
     transition: background-color 0.3s; /* Agrega una transición suave para el cambio de color de fondo */
+    width: 300px; /* Ancho máximo del botón */
 }
 
 .whatsapp-link {
@@ -127,19 +121,29 @@ footer {
     font-family: "Madimi One", sans-serif;
     font-size: 20px;
     color: #fff;
-    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5073c8, #1098ad, #07b39b, #6fba82, #b5cc5c, #fde725); /* Degradado anaranjado de Instagram */
-    border-color: #f09433; /* Color primario del degradado */
+    background: linear-gradient(to left, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5073c8); /* Degradado anaranjado de Instagram */
     padding: 10px 20px; /* Ajusta el espaciado interno */
     display: flex; /* Usa flexbox */
     align-items: center; /* Centra verticalmente el contenido */
     justify-content: center; /* Centra horizontalmente el contenido */
     max-width: 300px; /* Ancho máximo del botón */
     margin: 0 auto; /* Centra horizontalmente el botón */
+    border-radius: 10px;
 }
 
 .btn-instagram:hover {
-    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5073c8, #1098ad, #07b39b, #6fba82, #b5cc5c, #fde725); /* Mantén el mismo degradado al pasar el mouse */
-    border-color: #f09433; /* Mantén el mismo color de borde al pasar el mouse */
+    font-family: "Madimi One", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to left, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5073c8); /* Mantén el mismo degradado al pasar el mouse */
+    padding: 10px 20px; /* Ajusta el espaciado interno */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    max-width: 300px; /* Ancho máximo del botón */
+    margin: 0 auto; /* Centra horizontalmente el botón */
+    border-radius: 10px;
+
 }
 
 .btn-instagram i {
