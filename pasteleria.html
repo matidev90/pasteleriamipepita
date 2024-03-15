@@ -45,44 +45,55 @@
                 <h3 class="mb-4">Algunos de nuestros trabajos realizados en Pastelería</h3>
                 <div class="row gallery">
                     <div class="col-md-3">
-                        <img src="img/fotos/p11.jpg" alt="Pastel 1" class="img-fluid">
+                        <img src="img/fotos/p11.jpg" alt="Pastel 1" class="img-fluid" onclick="openModal('img/fotos/p11.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p1.jpg" alt="Pastel 2" class="img-fluid">
+                        <img src="img/fotos/p1.jpg" alt="Pastel 2" class="img-fluid" onclick="openModal('img/fotos/p1.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p5.jpg" alt="Pastel 3" class="img-fluid">
+                        <img src="img/fotos/p5.jpg" alt="Pastel 3" class="img-fluid" onclick="openModal('img/fotos/p5.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p3.jpg" alt="Pastel 4" class="img-fluid">
+                        <img src="img/fotos/p3.jpg" alt="Pastel 4" class="img-fluid" onclick="openModal('img/fotos/p3.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p4.jpg" alt="Pastel 5" class="img-fluid">
+                        <img src="img/fotos/p4.jpg" alt="Pastel 5" class="img-fluid" onclick="openModal('img/fotos/p4.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p6.jpg" alt="Pastel 6" class="img-fluid">
+                        <img src="img/fotos/p6.jpg" alt="Pastel 6" class="img-fluid" onclick="openModal('img/fotos/p6.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p7.jpg" alt="Pastel 7" class="img-fluid">
+                        <img src="img/fotos/p7.jpg" alt="Pastel 7" class="img-fluid" onclick="openModal('img/fotos/p7.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p8.jpg" alt="Pastel 8" class="img-fluid">
+                        <img src="img/fotos/p8.jpg" alt="Pastel 8" class="img-fluid" onclick="openModal('img/fotos/p8.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p10.jpg" alt="Pastel 9" class="img-fluid">
+                        <img src="img/fotos/p10.jpg" alt="Pastel 9" class="img-fluid" onclick="openModal('img/fotos/p10.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p14.jpg" alt="Pastel 10" class="img-fluid">
+                        <img src="img/fotos/p14.jpg" alt="Pastel 10" class="img-fluid" onclick="openModal('img/fotos/p14.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p9.jpg" alt="Pastel 11" class="img-fluid">
+                        <img src="img/fotos/p9.jpg" alt="Pastel 11" class="img-fluid" onclick="openModal('img/fotos/p9.jpg')">
                     </div>
                     <div class="col-md-3">
-                        <img src="img/fotos/p17.jpg" alt="Pastel 12" class="img-fluid">
+                        <img src="img/fotos/p17.jpg" alt="Pastel 11" class="img-fluid" onclick="openModal('img/fotos/p17.jpg')">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/fotos/p18.jpg" alt="Pastel 11" class="img-fluid" onclick="openModal('img/fotos/p9.jpg')">
+                    </div>
+                                        <div class="col-md-3">
+                        <img src="img/fotos/p19.jpg" alt="Pastel 11" class="img-fluid" onclick="openModal('img/fotos/p19.jpg')">
                     </div>
                 </div>
             </div>
         </section>  
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="imgModal">
+        </div>
+
         <div class="text-center pb-5">
             <a href="https://www.instagram.com/pasteleriamipepita/" target="_blank" class="btn btn-instagram">
                 <i class="fab fa-instagram"></i> Ver más de Pastelería en nuestro Instagram

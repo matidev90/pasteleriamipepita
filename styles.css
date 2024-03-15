@@ -47,7 +47,7 @@ footer {
 }
 .carousel-item img {
     max-width: 100%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
 }
 .carousel-indicators li {
     background-color: pink; /* Cambia el color de fondo de los indicadores a rosa */
@@ -59,12 +59,12 @@ footer {
   }
 
   .custom-carousel {
-    max-width: 400px; /* ajusta este valor según tus necesidades */
+    max-width: 800px; /* ajusta este valor según tus necesidades */
     margin: 0 auto; /* centra el carrusel */
 }
 .carousel-item img {
-    max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
-    max-height: 100%; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    max-width: 50%; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    max-height: 50%; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
     width: auto; /* Permite que las imágenes mantengan su relación de aspecto */
     height: auto; /* Permite que las imágenes mantengan su relación de aspecto */
     object-fit: cover;
@@ -104,28 +104,6 @@ footer {
 
 .whatsapp-link i {
     margin-right: 5px; /* Espacio entre el icono y el texto */
-}
-
-/* Efecto de zoom al pasar el mouse */
-.zoom-effect {
-    overflow: hidden; /* Oculta el contenido que se desborda */
-    position: relative; /* Establece el contexto de apilamiento para el contenido animado */
-    border-radius: 50%; /* Hace que el contenedor sea redondo */
-    width: 250px; /* Ancho del contenedor */
-    height: 250px; /* Altura del contenedor */
-    margin: auto; /* Centra el contenedor horizontalmente */
-    margin-bottom: 20px; /* Margen inferior entre los contenedores */
-}
-
-.zoom-effect img {
-    transition: transform 0.5s ease; /* Transición suave */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    width: 100%; /* Ajusta el tamaño de la imagen para que ocupe todo el contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-}
-
-.zoom-effect:hover img {
-    transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse */
 }
 
 /* Ajuste de márgenes entre las columnas */
@@ -172,7 +150,7 @@ footer {
 
 /* Estilos personalizados */
 .logo-img {
-    max-width: 300px;
+    max-width: 280px;
     height: auto;
 }
 
@@ -197,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .logo-img-small {
-    max-width: 250px; /* Ajusta el tamaño del logo en las paginas que no son el Inicio */
+    max-width: 200px; /* Ajusta el tamaño del logo en las paginas que no son el Inicio */
 }
 
 
@@ -233,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -100px; /* Reducir el espacio hacia la sección anterior */
 }
 .jumbotron-heading {
-    margin-top: -85px; /* Reducir el espacio hacia la sección anterior */
+    margin-top: -70px; /* Reducir el espacio hacia la sección anterior */
 }
 
 /* FIN styles de botones de inicio de redes sociales */
@@ -271,3 +249,50 @@ h1, h2, h3, h4, h5, h6 {
   }
   
 /*FIN styles btn wsp index */
+
+
+/* INICIO Agrega este código en tu CSS para estilizar el modal al abrir imagenes */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9); /* Fondo semitransparente */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Establece el ancho máximo del modal */
+    max-height: 80%; /* Establece la altura máxima del modal */
+    object-fit: contain; /* Mantiene la proporción original de la imagen */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #FFA4B7; /* Cambia el color a rosa */
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #FFA4B7;
+    text-decoration: none;
+}
+
+/* FIN Agrega este código en tu CSS para estilizar el modal al abrir imagenes */
+
+/*INICIO imagen construccion*/
+
+/*imagen construccion FIN*/
+
