@@ -124,7 +124,7 @@ footer {
 
 .btn-instagram {
     font-family: "Madimi One", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     background: linear-gradient(to left, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5073c8); /* Degradado anaranjado de Instagram */
     padding: 10px 20px; /* Ajusta el espaciado interno */
@@ -138,7 +138,7 @@ footer {
 
 .btn-instagram:hover {
     font-family: "Madimi One", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     background: linear-gradient(to left, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5073c8); /* Mantén el mismo degradado al pasar el mouse */
     padding: 10px 20px; /* Ajusta el espaciado interno */
@@ -151,9 +151,8 @@ footer {
 
 }
 
-.btn-instagram i {
-    font-size: 50px; /* Tamaño del icono */
-    margin-right: 10px; /* Espaciado a la derecha del icono */
+.btn-instagram i.fa-instagram {
+    font-size: 3rem; /* Ajustar tamaño del icono de Instagram en la sección de coctelería */
 }
 
 /* Estilos personalizados */
