@@ -24,15 +24,23 @@ body {
     font-family: "Madimi One", sans-serif;
     background-color: #ffffff;
 }
-#pasteles {
+#pasteleria {
     font-family: "Madimi One", sans-serif;
     background-color: white !important;
+}
+
+#coctel {
+    font-family: "Madimi One", sans-serif;
+    background-color: #ffffff;
 }
 
 #pedidos {
     font-family: "Madimi One", sans-serif;
     background-color: #ffffff;
 }
+
+
+
 footer {
     font-family: "Madimi One", sans-serif;
 }
@@ -81,9 +89,6 @@ footer {
 
 .whatsapp-link i {
     margin-right: 5px; /* Espacio entre el icono y el texto */
-}
-#pedidos {
-    background-color: #ffffff; /* Cambia el color de fondo a blanco */
 }
 
 /* Efecto de zoom al pasar el mouse */
@@ -151,3 +156,67 @@ footer {
     margin-right: 10px; /* Espaciado a la derecha del icono */
 }
 
+/* Estilos personalizados */
+.logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la galería de imágenes */
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery .col-md-3 {
+    margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Madimi One", sans-serif;
+}
+
+.gallery {
+    background-color: #fff; /* Color blanco */
+}
+
+
+.logo-img-small {
+    max-width: 250px; /* Ajusta el tamaño del logo en las paginas que no son el Inicio */
+}
+
+
+/* INICIO styles de botones de inicio de redes sociales */
+
+.btn-facebook, .btn-instagram1 {
+    border: 2px solid #FFA4B7; /* Agregar borde rosa */
+    border-radius: 50px; /* Hacer botones redondos */
+    color: #FFA4B7; /* Cambiar color del texto */
+    padding: 10px 20px; /* Ajustar el espacio interno */
+    display: flex; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear contenido verticalmente */
+    justify-content: center; /* Alinear contenido horizontalmente */
+    font-family: "Madimi One", sans-serif;
+}
+
+.btn-facebook:hover, .btn-instagram1:hover {
+    background-color: #FFA4B7; /* Cambiar color de fondo al pasar el ratón */
+    color: #fff; /* Cambiar color del texto al pasar el ratón */
+}
+
+.btn-facebook i, .btn-instagram i {
+    font-size: 1.2rem; /* Ajustar tamaño del icono */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.btn-facebook i, .btn-instagram1 i {
+    font-size: 1.5rem; /* Ajustar tamaño del icono */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+#redes-sociales {
+    margin-top: -100px; /* Reducir el espacio hacia la sección anterior */
+}
+
+/* FIN styles de botones de inicio de redes sociales */
