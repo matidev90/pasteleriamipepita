@@ -43,6 +43,7 @@ body {
 
 footer {
     font-family: "Madimi One", sans-serif;
+    font-size:small;
 }
 .carousel-item img {
     max-width: 100%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
@@ -56,6 +57,20 @@ footer {
     position: static;
     margin-top: 10px;
   }
+
+  .custom-carousel {
+    max-width: 400px; /* ajusta este valor según tus necesidades */
+    margin: 0 auto; /* centra el carrusel */
+}
+.carousel-item img {
+    max-width: 100%; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    max-height: 100%; /* Asegura que las imágenes no se extiendan más allá de su contenedor */
+    width: auto; /* Permite que las imágenes mantengan su relación de aspecto */
+    height: auto; /* Permite que las imágenes mantengan su relación de aspecto */
+    object-fit: cover;
+    border: 2px solid pink; 
+}
+
 /* Estilo normal del enlace de WhatsApp */
 .whatsapp-link {
     display: inline-block;
@@ -157,7 +172,7 @@ footer {
 
 /* Estilos personalizados */
 .logo-img {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
 }
 
@@ -217,5 +232,42 @@ h1, h2, h3, h4, h5, h6 {
 #redes-sociales {
     margin-top: -100px; /* Reducir el espacio hacia la sección anterior */
 }
+.jumbotron-heading {
+    margin-top: -85px; /* Reducir el espacio hacia la sección anterior */
+}
 
 /* FIN styles de botones de inicio de redes sociales */
+
+/*INICIO styles btn wsp index */
+/* styles.css */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* Se ha aumentado un poco el tamaño */
+    height: 50px; /* Se ha aumentado un poco el tamaño */
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    z-index: 999;
+    transition: transform 0.3s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
+  }
+  
+  /* Agregamos un estilo para quitar el subrayado al pasar el mouse */
+  .whatsapp-button:hover {
+    text-decoration: none;
+    background-color: #25D366;
+    color: #fff;
+  }
+  
+  /* Agregamos un estilo para hacer el botón un poco más grande al pasar el mouse */
+  .whatsapp-button:hover {
+    transform: scale(1.5); /* Aumentamos el tamaño al 110% */
+  }
+  
+/*FIN styles btn wsp index */
