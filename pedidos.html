@@ -21,9 +21,12 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand d-lg-none" href="#"  >
+                    <img src="img/logosinfondo.png" alt="Logo" class="img-fluid logo">
+                </a>
+                <button class="navbar-toggler navbar-toggler-custom" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-toggler-icon-custom"></span>
+                </button>                
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -47,17 +50,17 @@
         </div>
     </header>
     <main role="main">
-        <section id="pedidos" class="jumbotron text-center">
+        <section id="pedidos" class="jumbotron text-center mb-5">
             <div class="container">
                 <h2 class="jumbotron-heading">Realiza tus Pedidos</h2>
                 <p class="lead text-muted">Haz tu pedido personalizado con nosotros.</p>
-                <div style="margin-top: 20px;"></div>                
-                <img src="img/contacto.png" class="img-fluid" alt="Imagen de pedidos">
-                <a href="https://api.whatsapp.com/send?phone=56999750521&text=%F0%9F%91%8B%20Hola,%20me%20gustaría%20realizar%20un%20pedido" class="whatsapp-link">
+                <div class="mt-5 mb-5">
+                    <img src="img/socialmedia.jpg" class="img-fluid" style="max-width: 100%;" alt="Imagen de pedidos">
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=56999750521&text=%F0%9F%91%8B%20Hola,%20me%20gustaría%20realizar%20un%20pedido" class="whatsapp-link btn btn-primary btn-lg mt-3">
                     <i class="fab fa-whatsapp fa-3x"></i>
                     Chat por WhatsApp
-                </a>
-                
+                </a>    
             </div>
         </section>
     </main>

@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+          <!-- Botón de WhatsApp -->
+  <a href="#" id="whatsapp-button" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+  </a>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand d-lg-none" href="#"  >
+                    <img src="img/logosinfondo.png" alt="Logo" class="img-fluid logo">
+                </a>
+                <button class="navbar-toggler navbar-toggler-custom" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-toggler-icon-custom"></span>
+                </button>                
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -43,14 +50,51 @@
         <main role="main">
             <section id="pasteleria" class="py-2 text-center bg-light">
                 <div class="container">
-                    <h3 class="mb-4">Algunos de nuestros trabajos realizados en Pastelería</h3>
+                    <h3 class="mb-4">Algunos de nuestros trabajos realizados en Coctelería</h3>
                     <div class="row gallery">
-                        <div class="col-md-3" style="margin: auto;"">
-                            <img src="img/fotos/construc.jpg" alt="Pastel 1" class="img-fluid" onclick="openModal('img/fotos/p11.jpg')" style="max-width: 200px;">
-                        </div>                   
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c1.jpg" alt="Coctel 1" class="img-fluid" onclick="openModal('img/fotos2/c1.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c2.jpg" alt="Coctel 2" class="img-fluid" onclick="openModal('img/fotos2/c2.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c3.jpg" alt="Coctel 3" class="img-fluid" onclick="openModal('img/fotos2/c3.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c4.jpg" alt="Coctel 4" class="img-fluid" onclick="openModal('img/fotos2/c4.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c5.jpg" alt="Coctel 5" class="img-fluid" onclick="openModal('img/fotos2/c5.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c6.jpg" alt="Coctel 6" class="img-fluid" onclick="openModal('img/fotos2/c6.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c8.jpg" alt="Coctel 8" class="img-fluid" onclick="openModal('img/fotos2/c8.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c9.jpg" alt="Coctel 9" class="img-fluid" onclick="openModal('img/fotos2/c9.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c11.jpg" alt="Coctel 11" class="img-fluid" onclick="openModal('img/fotos2/c11.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c12.jpg" alt="Coctel 11" class="img-fluid" onclick="openModal('img/fotos2/c12.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c13.jpg" alt="Coctel 11" class="img-fluid" onclick="openModal('img/fotos2/c13.jpg')">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/fotos2/c16.jpg" alt="Coctel 11" class="img-fluid" onclick="openModal('img/fotos2/c16.jpg')">
+                        </div>
                     </div>
                 </div>
             </section>  
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="imgModal">
+            </div>
 
         <div class="text-center pb-5">
             <a href="https://www.instagram.com/pasteleriamipepita/" target="_blank" class="btn btn-instagram">
