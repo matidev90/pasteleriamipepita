@@ -346,14 +346,17 @@ footer {
     border-color: #ff69b4; /* Color del borde */
 }
 
+/* Estilos para el icono del burger menu */
 .navbar-toggler-icon-custom {
-    background-image: url("img/logosinfondo.png"); 
+    background-image: url("img/logosinfondo2.jpg"); 
     width: 30px; /* Ancho del icono del burger menu */
     height: 30px; /* Altura del icono del burger menu */
 }
 
+/* Estilos para el logo */
 .logo {
-    width: 60px; /* Ancho del logo */
+    width: 50px; /* Ancho del logo */
     height: auto; /* Altura automática para mantener la proporción */
 }
+    
 /* FIN burger menu */
