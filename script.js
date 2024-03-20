@@ -47,3 +47,49 @@ function closeModal() {
 }
 
 
+// JS carousel banners
+const bannerpromo = document.querySelector('.bannerpromo');
+const bannerpromoInner = document.querySelector('.bannerpromo-inner');
+const bannerpromoItems = document.querySelectorAll('.bannerpromo-item');
+const totalItems = bannerpromoItems.length;
+let currentIndex = 0;
+
+function updateBannerpromo() {
+  const offset = -currentIndex * 100;
+  bannerpromoInner.style.transform = `translateX(${offset}%)`;
+}
+
+function next() {
+  currentIndex = (currentIndex + 1) % totalItems;
+  updateBannerpromo();
+}
+
+function prev() {
+  currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+  updateBannerpromo();
+}
+
+document.querySelector('.bannerpromo-prev').addEventListener('click', prev);
+document.querySelector('.bannerpromo-next').addEventListener('click', next);
+
+// Autoplay
+setInterval(() => {
+  next();
+}, 3000); // Cambia cada 3 segundos
+
+
+//quitar flechas banner
+// Obtener referencias a las flechas del carrusel
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+
+// Agregar un evento al carrusel para mostrar u ocultar las flechas
+const carousel = document.querySelector('.bannerpromo');
+carousel.addEventListener('mouseover', () => {
+  prevButton.style.display = 'block';
+  nextButton.style.display = 'block';
+});
+carousel.addEventListener('mouseleave', () => {
+  prevButton.style.display = 'none';
+  nextButton.style.display = 'none';
+});

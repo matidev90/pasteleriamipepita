@@ -360,3 +360,59 @@ footer {
 }
     
 /* FIN burger menu */
+
+/*carousel banner*/
+/* Estilos generales */
+  /* Contenedor del carrusel */
+  .bannerpromo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Contenedor interno del carrusel */
+  .bannerpromo-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Elementos del carrusel */
+  .bannerpromo-item {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+  
+  /* Imágenes del carrusel */
+  .bannerpromo-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Flechas de cambio de diapositiva */
+  .bannerpromo-prev, .bannerpromo-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: pink; /* Cambiar el color de fondo a rosa */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    text-decoration: none; /* Eliminar el subrayado */
+  }
+  
+  .bannerpromo-prev {
+    left: 0; /* Alinear a la izquierda */
+  }
+  
+  .bannerpromo-next {
+    right: 0; /* Alinear a la derecha */
+  }
+  
+  .bannerpromo-prev:focus, .bannerpromo-next:focus {
+    outline: none; /* Eliminar el contorno al hacer clic */
+  }
+  
