@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var whatsappButton = document.getElementById("whatsapp-button");
     whatsappButton.addEventListener("click", function(event) {
       event.preventDefault();
-      window.open("https://api.whatsapp.com/send?phone=56999750521&text=%F0%9F%91%8B%20Hola,%20me%20gustaría%20realizar%20un%20pedidos", "_blank");
+      window.open("https://api.whatsapp.com/send?phone=56999750521&text=%F0%9F%91%8B%20Hola,%20me%20gustaría%20realizar%20un%20pedido", "_blank");
     });
   });
 
